@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+header{
+    width: 100%;
+}
+.header-container {
+    max-width: 1440px;
+    margin: auto;
+    padding: 24px 92px 0 92px;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    color: #9093A6;
+    gap: 30px
+}
+.menu{
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.menu i {
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu:hover #menu-icon{
+    opacity: 0;
+    visibility: 0;
+}
+#cancle{
+    position: absolute;
+    top: 34px;
+    right: 90px;
+    font-size: 32px;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu:hover #cancle{
+    opacity: 1;
+    visibility: visible;
+}
+.mega-menu{
+    max-width: 1440px;
+    min-width: 100%;
+    height: 87.4vh;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 81px;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+}
+.mega-menu-container{
+    width: 285px;
+    height: 100%;
+    float: right;
+    background: #fff;
+}
+.mega-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 207px;
+    height: 88px;
+    margin: auto;
+    border-bottom: 1px solid #F2F4FA;
+}
+.mega-contact i{
+    font-size: 18px;
+    color: #9093A6;
+}
+.mega-contact a{
+    color: #000 !important;
+    display: block;
+}
+.mega-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 207px;
+    height: 63px;
+    margin: auto;
+    border-bottom: 1px solid #F2F4FA;
+}
+.mega-select-lang{
+    padding:10px 40px 0 0;    
+}
+.mega-language{
+    float: right;
+}
+
+.menu:hover .mega-menu{
+    opacity: 1;
+    visibility: visible;
+}
+main {
+    max-width: 1255px;
+    margin:auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.main-left{
+    width: 534px;
+}
+.main-left>span{
+    font-size: 58px;
+    color: #3F4255;
+    font-weight: 300;
+}
+.main-btn{
+    display: flex;
+    gap: 22px;
+    padding-top: 110px;
+}
+.main-right img{
+    /* padding-right: 20px; */
+    margin-top: -35px;
+}
+.main-btn>button{
+    width: 118px;
+    height: 72px;
+    border: 2px solid #FFE145;
+    border-radius: 4px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 16px;
+    font-size: 16px;
+    color: #3F4255;
+}
+.main-btn span{
+    font-size: 12px;
+}
+.rucola{
+    position: absolute;
+    top: 382px;
+    left: 600px;
+    transform: rotate(-31deg);
+}
+.main-img-detail{
+    position: absolute;
+    top: 535px;
+    left: 1084px;
+}
+.main-bottom{
+    position: absolute;
+    top: 496px;
+    left: 0px;
+    padding: 24px 0 24px 50px;
+    display: flex;
+    gap: 16px;
+    /* box-shadow: 1px 0px 2px 3px gray; */
+}
+.main-bottom-box{
+    width: 246px;
+    height: 56px;
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    color:#3F4255;
+    gap: 10px;
+}
+.restaurant{
+    max-width: 1440px;
+    padding: 90px 0 0 65px;
+    margin: auto;
+}
+.restaurant h1{
+    font-size: 36px;
+    color: #000000;
+}
+.restaurant-cont{
+    padding-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+.find-restaurant{
+    max-width: 1440px;
+    height: 297px;
+    margin: auto;
+    background: #F2F4FA;
+    padding: 80px 0 0 172px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.find-restaurant-text{
+    width: 502px;
+}
+.find-restaurant-text h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.find-restaurant-input input{
+    width: 336px;
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px gray;
+    border: none;
+    font-size: 16px;
+    padding-left: 35px;
+    position: relative;
+    outline: none;
+}
+.find-restaurant button{
+    width: 88px;
+    height: 72px;
+    background: #FFE145;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.find-restaurant i{
+    position: absolute;
+    top: 1330px;
+    left: 793px;
+    color: gray;
+}
+.special{
+    max-width: 1440px;
+    padding: 50px 65px 0 65px;
+    margin: auto;
+}
+.special-top{
+    display: flex;
+    justify-content: space-between;
+}
+.special h2{
+    width: 36px;
+    font-weight: 300;
+}
+.special button{
+    width: 118px;
+    height: 48px;
+}
+.special-bottom{
+    padding-top: 40px;
+    display: flex;
+    gap: 23px;
+}
+.kitchen-main{
+    margin: auto;
+    max-width: 1440px;
+    padding-top: 50px;
+}
+.kitchen-main img{
+    width: 100%;
+}
+.map{
+    max-width: 1440px;
+    height: 500px;
+    margin: auto;
+    padding: 50px 65px 0 65px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+.kitchen-insta{
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 65px 40px 65px;
+}
+.kitchen-insta h2{
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.kitchen-insta span{
+    color: #6e6c6c;
+
+}
+.kitchen-insta-cont{
+    display: flex;
+    gap: 10px;
+}
+footer{
+    max-width: 1440px;
+    height: 437px;
+    margin: auto;
+    /* border: 1px solid #D4D7E5; */
+    background: #3F4255;
+    padding: 48px 65px 0 65px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.app-logo{
+    width: 296px;
+    height: 75px;
+    border-bottom: 1px solid #D4D7E5;
+}
+
+.app-store{
+    width: 296px;
+    height: 75px;
+    display: flex;
+    gap: 10px;
+    align-items: end;
+}
+.footer-container{
+    width: 800px;
+    display: flex;
+    gap: 103px;
+}
+.footer-container h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 25px;
+}
+.footer-container li{
+    font-size: 16px;
+    color: #D4D7E5;
+    margin-bottom: 16px;
+}
+.footer-container span{
+    font-size: 16px;
+    color: #D4D7E5;
+    margin-bottom: 16px;
+    display: block;
+}
+.language{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #D4D7E5;
+    font-size: 16px;
+    width: 78px;
+}
+.footer-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-icon{
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+.footer-bottom-cont{
+    display: flex;
+    gap: 25px;
+}
